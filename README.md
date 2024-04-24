@@ -22,4 +22,4 @@ Yes, by now you must create the api_token_id from the proxmox GUI
 Add the token and it's secret inside a new file called secret.tfvars
 NOTE: Terraform need privileges so attache 'Administrator' role to the token
 ## last command
-terraform apply -var-file="secret.tfvars"
+``` terraform apply -var-file="secret.tfvars" ```
