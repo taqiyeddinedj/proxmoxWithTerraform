@@ -1,3 +1,5 @@
+qm create 5000 --memory 2048 --core 2 --name ubuntu-cloud --net0 virtio,bridge=vmbr0
+
 qm importdisk 200 lunar-server-cloudimg-amd64-disk-kvm.img local-lvm
 
 qm set 200 --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-200-disk-0

@@ -11,5 +11,15 @@ The cloud init template must be created in advance, the VMs will use it to creat
 ### Run the cloud-init script
 
 ```./cloudinit.sh```
+The script will create the VM via the CLI, 
+* #### Create the Cloud-Init template
 
-### Make the necessary change for your customized cloud-init
+### Make the necessary change for your customized cloud-init (Cpu,Ram,...)
+
+## terraform init
+### Don't Forget
+Yes, by now you must create the api_token_id from the proxmox GUI
+Add the token and it's secret inside a new file called secret.tfvars
+NOTE: Terraform need privileges so attache 'Administrator' role to the token
+## last command
+terraform apply -var-file="secret.tfvars"
