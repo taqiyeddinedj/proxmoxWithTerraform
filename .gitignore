@@ -1,0 +1,9 @@
+.terraform/
+.tfvars
+terraform.tfstate
+secret.tfvars
+terraform.tfstate.backup
+
+.terraform.lock.hcl
+image-1.png
+image.png
